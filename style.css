@@ -54,6 +54,24 @@ a {
   height: 550px;
   background-color: #66ddf5;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px mediumblue, 2px 3px 5px cyan inset;
+}
+
+.profile-image, .description-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px mediumblue;
+  margin: 10px;
+}
+
+.profile-name {
+  font-size: 36px;
 }
 
 .profile__description {
@@ -61,4 +79,23 @@ a {
   height: 550px;
   background-color:#c2f1fb;
   border-radius: 25px;
+  box-shadow: 3px 3px 3px mediumblue, 2px 3px 5px cyan inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.description-header {
+  font-size: 30px;
+}
+
+.description-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+}
+
+.types {
+  margin-right: 100px;
 }
