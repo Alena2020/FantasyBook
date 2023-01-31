@@ -103,3 +103,21 @@ a {
 .footer-info {
   margin: 10px 100px;
 }
+
+.filter {
+  width: 87%;
+  height: 45px;
+  margin: 20px 100px;
+  background: linear-gradient(220.16deg, #bdf1fb 28%, #0dcaf0 178%);
+  box-shadow: 0px 5px 5px mediumblue;
+  border-radius: 24px;
+}
+
+.friends-cards {
+  width: 87%;
+  height: 490px;
+  margin: 20px 100px;
+  background: linear-gradient(220.16deg, #AFFFE2 28%, #0dcaf0 178%);
+  box-shadow: 0px 5px 5px mediumblue;
+  border-radius: 24px;
+}
