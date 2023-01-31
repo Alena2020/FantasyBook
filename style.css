@@ -111,6 +111,27 @@ a {
   background: linear-gradient(220.16deg, #bdf1fb 28%, #0dcaf0 178%);
   box-shadow: 0px 5px 5px mediumblue;
   border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 25px;
+}
+
+.filter__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter__button {
+  font-size: 10px;
+  font-family: cursive, sans-serif;
+  color: midnightblue;
+  border-radius: 24px;
+  padding: 5px 10px;
+  margin: 1px 5px;
+  background: linear-gradient(220.16deg, white 28%, #0dcaf0 178%);
+  box-shadow: 0px 1px 1px mediumblue;
+  cursor: pointer;
 }
 
 .friends-cards {
