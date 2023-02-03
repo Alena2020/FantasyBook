@@ -165,3 +165,18 @@ a {
 .profile-name-small {
   font-size: 15px;
 }
+
+.settings-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.personal-data, .settings-form {
+  width: 575px;
+  height: 550px;
+  background-color: #bdf1fb;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px mediumblue, 2px 3px 5px cyan inset;
+  margin: 20px 70px;
+}
