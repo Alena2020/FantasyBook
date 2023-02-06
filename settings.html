@@ -29,7 +29,44 @@
   <section class="hero">
     <div class="settings-content">
       <div class="personal-data">
+        <h2 class="personal-data-header">Personal data</h2>
+        <form id="personal-data-form">
+          <div id="inputs">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Type your name"/>
 
+            <label for="file-input">Image</label>
+            <input type="file" id="file-input" name="file" accept = "image/*">
+
+            <label>Type</label>
+            <select class="type-selector">
+              <option value="select">Select your type</option>
+              <option value="unicorn">Unicorn</option>
+              <option value="griffin">Griffin</option>
+            </select> 
+
+            <label>Country</label>
+            <select class="country-selector">
+              <option value="select">Select your country</option>
+              <option value="silverSky">Silver Sky</option>
+              <option value="moonlight">Moonlight</option>
+            </select> 
+
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="date" placeholder=""/>
+
+            <label for="hobby">Hobby</label>    
+            <input type="text" id="hobby" name="hobby" placeholder="Type your hobby"/>
+
+            <label for="music">Music</label>    
+            <input type="text" id="music" name="music" placeholder="Type your favorite music"/>
+
+            <label for="about">About your</label> 
+            <textarea placeholder="Write a short description" id="about" ></textarea>
+          </div>
+
+          <button type="submit" id="submit-button">Save data</button>
+        </form>
       </div>
       <div class="settings-form">
 

@@ -124,7 +124,7 @@ a {
   flex-direction: row;
 }
 
-.filter__button {
+.filter__button, #submit-button {
   font-size: 10px;
   font-family: cursive, sans-serif;
   color: midnightblue;
@@ -134,6 +134,13 @@ a {
   background: linear-gradient(220.16deg, white 28%, #0dcaf0 178%);
   box-shadow: 0px 1px 1px mediumblue;
   cursor: pointer;
+}
+
+.filter__button:hover,
+#submit-button:hover {
+  color: aliceblue;
+  background: linear-gradient(220.16deg, white 18%, #0dcaf0 38%);
+  box-shadow: 0px 1px 1px cyan;
 }
 
 .friends-cards {
@@ -179,4 +186,32 @@ a {
   border-radius: 25px;
   box-shadow: 3px 3px 3px mediumblue, 2px 3px 5px cyan inset;
   margin: 20px 70px;
+  padding: 20px;
+}
+
+#inputs {
+  width: 475px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+input, select, textarea {
+  width: 200px;
+  font-size: 14px;
+  padding: 7px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px mediumblue, 1px 3px 3px midnightblue inset;
+}
+
+textarea {
+  height: 180px;
+}
+
+#submit-button {
+  font-size: 16px;
 }
