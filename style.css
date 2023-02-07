@@ -124,7 +124,8 @@ a {
   flex-direction: row;
 }
 
-.filter__button, #submit-button {
+.filter__button, #submit-button-save-data,
+#submit-button-save-settings {
   font-size: 10px;
   font-family: cursive, sans-serif;
   color: midnightblue;
@@ -137,7 +138,8 @@ a {
 }
 
 .filter__button:hover,
-#submit-button:hover {
+#submit-button-save-data:hover,
+#submit-button-save-settings:hover {
   color: aliceblue;
   background: linear-gradient(220.16deg, white 18%, #0dcaf0 38%);
   box-shadow: 0px 1px 1px cyan;
@@ -179,7 +181,7 @@ a {
   justify-content: space-around;
 }
 
-.personal-data, .settings-form {
+.personal-data, .settings-data {
   width: 575px;
   height: 550px;
   background-color: #bdf1fb;
@@ -189,7 +191,7 @@ a {
   padding: 20px;
 }
 
-#inputs {
+#personal-data-form-inputs, #settings-data-form-inputs {
   width: 475px;
   height: 400px;
   display: flex;
@@ -212,6 +214,12 @@ textarea {
   height: 180px;
 }
 
-#submit-button {
+#submit-button-save-data, #submit-button-save-settings {
   font-size: 16px;
+}
+
+.checkboxs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
