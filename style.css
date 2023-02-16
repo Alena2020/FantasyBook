@@ -124,8 +124,9 @@ a {
   flex-direction: row;
 }
 
-.filter__button, #submit-button-save-data,
+.filter__button, .menu__button-burger, #submit-button-save-data,
 #submit-button-save-settings {
+  display: inline-block;
   font-size: 10px;
   font-family: cursive, sans-serif;
   color: midnightblue;
@@ -135,14 +136,59 @@ a {
   background: linear-gradient(220.16deg, white 28%, #0dcaf0 178%);
   box-shadow: 0px 1px 1px mediumblue;
   cursor: pointer;
+  animation-delay: 1s;
+}
+
+.menu__button-burger{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 3px;
+  right: 10px;
+  z-index: 30;
 }
 
 .filter__button:hover,
+.menu__button-burger:hover,
 #submit-button-save-data:hover,
 #submit-button-save-settings:hover {
   color: aliceblue;
   background: linear-gradient(220.16deg, white 18%, #0dcaf0 38%);
   box-shadow: 0px 1px 1px cyan;
+}
+
+.menu__button-burger span {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: mediumblue;
+  transition: all 0.5s;
+}
+
+.menu__button-burger span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+
+.menu__button-burger span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+.menu__button-burger.active span:nth-of-type(1) {
+  display: none;
+}
+
+.menu__button-burger.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu__button-burger.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
 }
 
 .friends-cards {
