@@ -139,14 +139,8 @@ a {
   animation-delay: 1s;
 }
 
-.menu__button-burger{
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  top: 3px;
-  right: 10px;
-  z-index: 30;
+.menu__button-burger {
+  display: none;
 }
 
 .filter__button:hover,
@@ -189,6 +183,10 @@ a {
 .menu__button-burger.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.menu__popup {
+  display: none;
 }
 
 .friends-cards {
@@ -268,4 +266,56 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    position: fixed;
+  }
+
+  .navbar {
+    display: none;
+  }
+  
+  .menu__button-burger{
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 3px;
+  right: 10px;
+  z-index: 30;
+  }
+
+  .menu__popup {
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    width: 50%;
+    height: 20%;
+    background: linear-gradient(135deg, #0dcaf0 0%, lavender 100%);
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .menu__popup.open {
+    right: 0;
+  }
+
+  .menu__popup .navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
 }
